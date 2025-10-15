@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "YSRCPConnect",
+    "slug": "ysrcp-connect",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1DA1F2"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ysrcp.connect",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take photos and videos for posts",
+        "NSPhotoLibraryUsageDescription": "This app uses the photo library to select photos and videos for posts",
+        "NSMicrophoneUsageDescription": "This app uses the microphone to record videos with audio"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1DA1F2"
+      },
+      "package": "com.ysrcp.connect",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-image-picker",
+      "expo-camera",
+      "expo-av",
+      "expo-notifications",
+      "expo-auth-session",
+      "expo-web-browser",
+      "expo-secure-store",
+      "expo-constants",
+      "expo-linear-gradient",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "notification": {
+      "icon": "./assets/notification-icon.png",
+      "color": "#1DA1F2",
+      "iosDisplayInForeground": true,
+      "androidMode": "default",
+      "androidCollapsedTitle": "New notification from YSRCPConnect"
+    },
+    "scheme": "ysrcp-connect",
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
+    },
+    "owner": "ysrcp-team"
+  }
+}
